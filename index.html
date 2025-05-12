@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>User Mgmt System</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="icon" href="https://upload.wikimedia.org/wikipedia/en/6/64/Ateneo_de_Davao_University_logo.png" type="image">
+
+  </head>
+  <body>
+    <div class="container">
+      <h1>User Management System - IT 2C</h1>
+      <div class="filters">
+        <input type="text" id="searchTitle" placeholder="Search by title" />
+        <select id="authorFilter" aria-label="Filter by Author">
+          <option value="all">All Authors</option>
+        </select>
+      </div>
+
+      <div id="postsContainer"></div>
+    </div>
+
+    <div class="modal" id="userModal">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 id="userModalLabel">User Details</h5>
+            <button class="close-modal" onclick="closeModal()">&times;</button>
+          </div>
+          <div class="modal-body">
+            <p><strong>Name:</strong> <span id="userName"></span></p>
+            <p><strong>Username:</strong> <span id="userUsername"></span></p>
+            <p><strong>Email:</strong> <span id="userEmail"></span></p>
+            <p><strong>Phone:</strong> <span id="userPhone"></span></p>
+            <p><strong>Website:</strong> <span id="userWebsite"></span></p>
+            <p><strong>Company:</strong> <span id="userCompany"></span></p>
+            <p><strong>Address:</strong> <span id="userAddress"></span></p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
