@@ -6,7 +6,7 @@ document.addEventListener("DOMContentLoaded", () => {
   let posts = [];
   let users = [];
 
-  // Fetch posts and users
+  // Kuhaon API sa posts ug users
   Promise.all([
     fetch("https://jsonplaceholder.typicode.com/posts").then((res) =>
       res.json()
@@ -92,7 +92,7 @@ function closeModal() {
   document.getElementById("userModal").classList.remove("show");
 }
 
-// Optional: Close modal when clicking outside
+// Ma exit ang modal kung i-click ang gawas sa modal
 window.addEventListener("click", (event) => {
   const modal = document.getElementById("userModal");
   if (event.target === modal) {
